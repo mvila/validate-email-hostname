@@ -1,6 +1,6 @@
 {
   "name": "validate-email-hostname",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if the hostname of an email has a MX or A record",
   "author": "Manuel Vila <mvila@3base.com>",
   "license": "MIT",
