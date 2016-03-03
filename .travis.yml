@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '0.12'
+branches:
+  only:
+  - master
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: mvila@3base.com
+  api_key:
+    secure: xqOmNMEUeRqjQDU4sNAwYANVdc4yOObr+sCzQ23RKT039UDC+RiOOngk3o9M3eo0Wc3gtcDpZrbTgDSArZqbgB5/efW/nbRKWEs0Z0UXvs9NhJ8vmmOqy2fBCdtJ/YNWhSdNrRUQr3amZOqadV9cKXD3feDRICfAVwkk8nHPEy/52IXtTbZVezaPvH14N6ftK0HBGs6veiCX+VJYcHTjGwQvAxsVlmy1FgfV88UaD2rQ+bylGGUAO/pauuytQSF+ZKwDPu6cmKXNuz68c0HWvCJDUzxnPkyaLSmZktU8kMxffs4QNPZK/PGCV1C7XImTh3Ychfhqg5seD0p9yv1yrDtzkvLjr2ScsqD7mF44ioB9hYWgVLEqygltn1IFMBcK5lHrzVwgJaWk+6X49meuPedhqHIAvaZ2641DGAxXQqzkjEXMGTpS8KSYilf/fkZF/BJkAcWJjPCqesqtG/cDdK+YLl5wYnph4pWqDBxOIdXADGMwMx+Yy+iQzm+QDq7+ufBNjdps0Od0F3Se8oX4ZhyzAPXGxqJio7HdjWS2POO3Hh5Fkr281e32f58epy/fv6kDUJf7kVvZuzopUW5+sRG+wzQhjT0Kj/zWj1VK+BrkjlNEu6LDH+yRdd13+8vjH//VYJWB7GYpdYJrF+KdWNqAsRtRN6vsEz7/CRjLals=
+  skip_cleanup: true
+notifications:
+  email: false
+  slack:
+    secure: itHH/j2hJB+NG8EmoLd92wOQs0rqrch2U1Zj2JMFQhA5EkVSO+O12pkrzlcRndOtRjKDdDye4TdyDPjBPTtScOFkrvgO0rMpsM7pLX6QiBWRMcQFM742JOulK8oz6RfPj5mdIf+UNJLdbFlDnLepGkGqsfPOjidZjrh92ayytwNwNyrB97axCfHBBo7WiHJmL8dj4DxxOxtuBssQhjKWYBY5yy5Jh/30RQqRLGHsZsjV6H4BfKLzLZcTCjtSyiAckTzphnJXyVasqkUlaxcZnmGmFuuuPvtXeMakM1CJb3JD8TYtXiuZzbggsto8lupZ1kd8AcUHdMY76GjnsZz8c0Xs1smW/l14Pw/2Z78lnkttpG8eEY9wNypRIRVlqKva3fJaK/I7u3P3ONfY4Eqbsn3CPTd/Ye+DXOjFSI3cpSpZmSYNMJfKVlgwciuYT8x4reZ0onMybHifr/FTf670I554x8eIyM6xBK2h7oN+9SIV5N4F/QeDhoNP379V9jeKZ+qGJ8d4UsceRe74KtFT7MZu+2XJ1H/Mmi3lpqD5oAVfEyLBfiqdHyrydW56d8/huSOEjxuUZ3mI2E0hzleaiHbCKEXnzcBC8Ch3o2vsD+YZDbeQbMStwe3F/bIvDrWvFZ3YyTAV0byZs02KVc44VMMHVYTnLP/bM8L5+chaJT0=
+sudo: false
