@@ -20,6 +20,7 @@ async function example() {
   let test2 = await validateEmailHostname('nobody@ynvhunb87cjd.fr');
   console.log(test2); // => false
 }
+```
 
 ## License
 
