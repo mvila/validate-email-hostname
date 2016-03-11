@@ -1,7 +1,7 @@
 'use strict';
 
 import { assert } from 'chai';
-import validateEmailHostname from './src';
+import validateEmailHostname from './';
 
 describe('validateEmailHostname', function() {
   it('should return false for undefined, null, empty or non string', async function() {
