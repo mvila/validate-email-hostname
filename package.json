@@ -1,6 +1,6 @@
 {
   "name": "validate-email-hostname",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Check if the hostname of an email has a MX or A record",
   "author": "Manuel Vila <mvila@3base.com>",
   "license": "MIT",
@@ -20,8 +20,7 @@
     "lint": "eslint .",
     "test": "mocha --compilers js:babel-register,js:babel-polyfill"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.6.5",
     "babel-eslint": "^6.0.0",
