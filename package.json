@@ -2,6 +2,18 @@
   "name": "validate-email-hostname",
   "version": "1.0.7",
   "description": "Check if the hostname of an email has a MX or A record",
+  "keywords": [
+    "email",
+    "domain",
+    "hostname",
+    "check",
+    "valid",
+    "validation",
+    "verify",
+    "verification",
+    "DNS",
+    "MX"
+  ],
   "author": "Manuel Vila <mvila@3base.com>",
   "license": "MIT",
   "reveal": true,
