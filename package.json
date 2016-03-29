@@ -30,7 +30,7 @@
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "eslint": "^2.5.3",
-    "eslint-config-next": "^0.1.10",
+    "eslint-config-next": "^0.1.12",
     "mocha": "^2.4.5"
   }
 }
