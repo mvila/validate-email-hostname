@@ -1,6 +1,6 @@
 {
   "name": "validate-email-hostname",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Check if the hostname of an email has a MX or A record",
   "keywords": [
     "email",
