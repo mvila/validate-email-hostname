@@ -11,7 +11,7 @@ npm install --save validate-email-hostname
 ## Usage
 
 ```javascript
-import EventEmitterMixin from 'validate-email-hostname';
+import validateEmailHostname from 'validate-email-hostname';
 
 async function example() {
   let test1 = await validateEmailHostname('steve@apple.com');
