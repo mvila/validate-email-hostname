@@ -2,17 +2,21 @@
 
 import dns from 'dns';
 
-export async function validateEmailHostname(email) {
-  if (!email) return false;
-  if (typeof email !== 'string') return false;
+export function validateEmailHostname(email) {
+  if (!email) return Promise.resolve(false);
+  if (typeof email !== 'string') return Promise.resolve(false);
 
   const hostname = email.split('@')[1];
-  if (!hostname) return false;
+  if (!hostname) return Promise.resolve(false);
 
-  if (await dnsResolve(hostname, 'MX')) return true;
-  if (await dnsResolve(hostname, 'A')) return true;
-
-  return false;
+  return dnsResolve(hostname, 'MX').then(okay => {
+    if (okay) {
+      return true;
+    }
+    return dnsResolve(hostname, 'A').then(okay => {
+      return Boolean(okay);
+    });
+  });
 }
 
 function dnsResolve(hostname, rrtype) {
